@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-    width: 100px;
+    width: 100%;
 }
 
 
@@ -190,9 +190,8 @@ footer p {
 @media all and (min-width: 480px) {
     /* classes and items */
     .horicenter {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
+        display: flex;
+        flex-direction: row;
     }
     .centerImage {
         display: flex;
@@ -219,8 +218,10 @@ footer p {
         justify-content: space-between;
     }
     #join img {
-        max-width: 50%;
-        max-height: 50%;
+        max-width: 100%;
+    }
+    .joinform {
+        align-self: center;
     }
     /*------- Blog --------*/
     #row1,
