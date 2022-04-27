@@ -227,19 +227,24 @@ footer p {
     #row2 {
         flex-direction: row;
     }
-    /*------- Download --------*/
+    /*---- download ----*/
     #download {
         flex-direction: row;
     }
     .position {
         align-self: center;
     }
-    /*------- About -------*/
+    /*---- about ----*/
     #aboutPage {
         flex-direction: row;
     }
     .aboutPara {
         flex: 2;
         align-self: center;
+    }
+    /*---- Blog ----*/
+    #bg1,
+    #bg2 {
+        flex-direction: row;
     }
 }
