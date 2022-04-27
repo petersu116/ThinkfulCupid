@@ -172,7 +172,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 580px) {
+@media all and (min-width: 480px) {
     .horicenter {
         margin: auto;
         width: 50%;
@@ -196,12 +196,16 @@ footer p {
     #join img {
         width: 60%;
     }
+    
+    /*---- download ----*/
     #download {
         flex-direction: row;
     }
     .position {
         align-self: center;
     }
+    
+    /*---- about ----*/
     #aboutPage {
         flex-direction: row;
     }
