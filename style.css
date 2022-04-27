@@ -36,6 +36,13 @@ main img {
 }
 
 
+/* -------  about ------- */
+
+.aboutPic {
+    width: 100%;
+}
+
+
 /* ---  Groups & Items --- */
 
 .group {
@@ -67,6 +74,7 @@ header {
     font-family: "Tangerine", cursive;
     font-size: 72px;
     color: #ecdbc9;
+    padding: 0 10px 0 0;
 }
 
 header nav ul {
@@ -75,7 +83,7 @@ header nav ul {
 }
 
 header nav ul:last-child {
-    margin-right: 0px;
+    margin-right: 20px;
 }
 
 header nav ul li {
@@ -128,18 +136,11 @@ form button {
 
 #join img {
     width: 100%;
-    padding-bottom: 14px;
+    padding: 0 0 8px;
 }
 
 
-/*About*/
-
-.aboutPic {
-    width: 100%;
-}
-
-
-/*Download Page*/
+/* -------  Download Page -------*/
 
 .download-image {
     width: 100%;
@@ -150,10 +151,24 @@ form button {
 }
 
 
-/*---- Blog -----*/
+/* -------  Blog Page ------- */
+
+#blog {
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
 #blog img {
     width: 100%;
+}
+
+#blog h2 {
+    padding-bottom: 2%;
+}
+
+#blog p {
+    padding-bottom: 5%;
 }
 
 
@@ -173,10 +188,16 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
+    /* classes and items */
     .horicenter {
         margin: auto;
         width: 50%;
         padding: 10px;
+    }
+    .centerImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /* ---------Nav---------- */
     section,
@@ -186,32 +207,39 @@ footer p {
         padding-bottom: 14px;
     }
     .logo {
-        font-size: 48px;
+        font-size: 43px;
     }
+    header nav ul li a {
+        padding: 0 10px 0 0;
+    }
+    /* ------Join-------*/
     #join {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     #join img {
-        width: 60%;
+        max-width: 50%;
+        max-height: 50%;
     }
+    /*------- Blog --------*/
+    #row1,
+    #row2 {
+        flex-direction: row;
+    }
+    /*------- Download --------*/
     #download {
         flex-direction: row;
     }
     .position {
         align-self: center;
     }
+    /*------- About -------*/
     #aboutPage {
         flex-direction: row;
     }
     .aboutPara {
         flex: 2;
         align-self: center;
-    }
-    /*---- Blog ----*/
-    #bg1,
-    #bg2 {
-        flex-direction: row;
     }
 }
